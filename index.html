@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLZ</title>
+    <style>
+        footer{
+            background-color: rgb(196, 196, 196);
+            height: 200px;
+        }
+        header{
+            background-color: rgb(196, 196, 196);
+            height: 180px;
+        }
+        input{
+            width:400px ;
+            height:20px ;
+            border-radius:8px ;
+        }
+        button{
+            border-radius: 10px;
+            width: 70px;
+            height: 30px;
+            border: none;
+            margin-left: 10px;
+        }
+        button:hover{
+            background-color: rgb(167, 165, 165);
+        }
+        button:active{
+            background-color:rgb(172, 172, 172) ;
+        }
+        img{
+            border-radius: 10px;
+            border-color: rgb(212, 212, 212);
+        }
+        div-2{
+            display: inline-flex;
+            margin-left: 5px;
+        }
+        div-2:hover{
+            opacity: 0.7;
+        }
+        a{
+            color: rgb(0, 0, 0);
+        }
+        div{
+            background-color: rgb(196, 196, 196);
+            width: 250px;
+            height: 420px;
+            border-radius: 10px;
+            border-color: rgb(82, 82, 82);
+            display:inline-block;
+            margin: 5px;
+        }
+        h5{
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <center>
+    <img src="logo.png" width="200px">
+    <br>
+        <div-1 class="box">
+            <input type="text" placeholder="search">
+        </div-1>
+        <br><br>
+        <a href="">
+            <button>
+                cart
+            </button>
+        </a>
+        <a href="">
+            <button>
+                Favorites
+            </button>
+        </a>
+    </center>
+</header>
+<br><br>
+<center>
+    <div-2 class="">
+        <a href="file:///C:/Users/yahya/OneDrive/Desktop/TEST/intel/intel.html">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX///8AAAAAaLX4+PiHh4fGxsZycnJ/f38pKSmkpKRjY2Pz8/O8vLzKysqxsbGjvNwAYLIAW7AAWK8AY7N4n87r8PcICAjs7OyNjY3R0dHd3d2bm5tPT0/W1ta/v7/j4+NBQUGrq6toaGgeHh5TU1MxMTHC0ucAT6wASaonJyeWlpZ4eHg8PDwVFRVkZGQSEhIJBOpcAAAEQ0lEQVR4nO3ba3uqRhSGYSkKHtndu20ARTEe2u4cmv//70pilDXMAiSxwJU+90eYGeZFDsOAgwEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/O/dB7lPN/ZN+PMGnbsF1xE+3dpfv158//0GvbuF2yb88cvFbySs4Dl3Z87os33qacIcCWuRsBkSXomEjZCwma+f8O/vFz++ZsI/pI830+OEN0LCRkjYCRI2QsKGrc1yrr3oUm4RJactJv58ZjcjE87dYmW5vU00/flWbOtN1m0klF3bnBb5YtHybcls6BiSeVUzFZ0LkkIRL/7PE8o474eXjPOW8MHu/H7xgYQrrdB403nCcKx1zHlsmnCuNpPZpt0mXJZ2rFFC91DWTmbSYcI0Le/XU4OEFc282nWXcH1lv2oSxtUBs2tXZwn3lf3KL6nVCSv308m0q4Q1rksYXtNU1M+Eq6sSVh8IZ/mdsZOEfjAazVfT0hBVCX1z6X44j9N0PY+OJW11kPA5vykXb9rnNTJhMAtPTqvM2810mW87NffL5ThtPaEny8/26rqKkfdWli8M0pbPcuV5INt2wsis4JpraxPKG8XYtbYv85+31HLCf4o1zEt/WpdQjGXutA7IMWE3Ce3dblxvNjUJ5Z1iaTVVKLDpImFkVzEGKJOahJN8+c5uqrA5r4uExXH/K7l+WJNQPBCWPO/KIWsHCdVTRx6mXk3CK/oqioTtJ/S0OpEosKtOKG+GD1EUDQt83x/ui1VbTbjS6tyLAtPqhBunkUn7CdVPkuTTek1CuTOuELWfUJ0ZbJBQnZop57efcKHVaZBQmcSq4pGwfwnFDf+LJiydQvwyCcUI7+U4rrPv8ZXmUSySk9izj/S1lwllM8ZLjRc9eaVeJpQDOWMGW7T/pLWl6WVCeWcfyrIjseLaH7GXCQOxaGwUlr1V3ygGx+JDdi8TLpyySvL4/ak09vrrF+anepnQnNaWz7ryauq8FB+ow9MT8kP/ExoHo+Mkq3m8XNrNZSepPCTDy9YTubifCbXXg2p4ZxqsX8/HWbwyZlLF797PhNoA9H3VSFmlyG8yesKw44TG6VbonK+sU1TO6j8e/MPBntlsMeFgV55wUPwCQ7W9FFcSbtfrOJztPxLxZgmVl4R5jaf6gOItsJ1wMgqdIAlS8/OIlhMqZ6KoUvsrykk9O2EySLeDiT/QbqjtJbTfIco6Na9djRkvLWHo7LPT8NhtQiuFUSl+cUol5nXSTrhzs9/wLjvaO044iM2PiwrVymY0jsWN2AlTz/UGwSayvja7gnx0HZWGLk94MFct5KFqVQyKL7YzO/vLNuVaOp+mbuopr4nqjSYXq/dB48JeZErzf7He209EyyDaJcdnLWFWdSUHP0dffaByV3kPzuOAMJr66tu5PgrjTbZvNrG69wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgT/4FckJGk17NXvIAAAAASUVORK5CYII=" width="117" height="117" border="1">
+        </a>
+        </div-2>
+        <div-2 class="">
+        <a href="file:///C:/Users/yahya/OneDrive/Desktop/TEST/ryzen/ryzen.html">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV9cGux5jeJDIwhKZx36DNb4WEyjtm3L1R9krxHs0Fu_oSK1sKxNBg4kbzkToCrI2QWDw&usqp=CAU" width="117" height="117" border="1">
+        </a>
+        </div-2>
+<div-2 class="">
+<a href="">
+    <img src="https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/26/Asus_202301262152.png" width="117" height="117" border="1">
+</a>
+</div-2>
+<div-2 class="">
+<a href="">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQue1IFeKOn2AivLSsAWskt-zmfOs9aEC5pnGSKlKGySA6ullz_r96BFNC4hP-k1ufmQc&usqp=CAU" width="117" height="117" border="1">
+</a>
+</div-2>
+<div-2 class="">
+    <a href="">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAhFBMVEX///8AXaoAW6kAWqkAUKUAWKgAVKYeZa0AVqfU4O4ATqTC1OdpkMLw9vovcrQAUqacttYAS6Nxl8YbabA7eLfs8vhOgLuOrdHi7PXM2up1m8jY4++5zeNWh772+vxFe7ihudizx+CLqc+CpM2pwNwAP58AR6GBp89tmsiguNdfjMA4dLV0FK8EAAAEqUlEQVR4nO3Y61LbOhQFYFmyFMWJo+ZG7gaTHCjw/u9X7S3JlyTtdEgK58f6Zjo1Rra1rJuFEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L2Gz4ePSfSTToxclmVu2BTYPB8WqcBDe92AyWV7IzVI5rNTJcTO0HEWSywl/WSHYt2W498fhZhlvTOVWB4P9bEWp+Pt+faDwqjEvnPCXEpZpISjeaeAnrcXUikpzY82YSEb2pmREFtDJWItj/SDHQux7pSj32+FGNveGf92xEq8vorX55sDvhcya+mQkNowjwm3heoUkJPmyodwXg7ahHnW9bIRlaaDKVVYlM4/SdrSN22/nKaEuvsQ6y+ofMJ9Pbo54YMJN1WWucN5wrHrFTBNGy6nVBf/r9j0E7rptKAwmXoU4kSnQiMe6VHuyR/t/iuKIqS0/uhlFhPKafTiX0P1Kn4KK27tpVuuv8yzwyz4cZZwFSrimgLNE1e+wmrh21GPewnd3jfXnrJzZ5soOqAaU2rFL6hae0PKZJ+X/nAZEsr5efVuNyy4lwz2/dNtQm6oTKn95bVzX2G3czFIP6EQT9Rg02V8hFmFN9Jpb1Faf4NmEP+rhDyU1OL8dJtwxp1nXl1euvE1Vx/i0d/BnOK5TsLapOgzS52kqowPZMftDb4kYRhKZnl+vklYaR5o6yvXUsXNG7eVSrNPSDiiO1MLa15ZSsNJQqOW7Q2+JGHt4kzGqpL0Em6oyuqQClSpgFeEXrim//NdJ6F6mM0eaYJW8c08UU8e0MB07cJyNWEWx/q4vldCHhom3e7DaG0HvYQ1F3hLtfAFdBGOT4Y7qZ9JqPMdOwkzpTV3/sfU9DzZyPM2ukyYSR3k3Tdxk2dLvSoN/kclZZjrmoSn3isYa19PF45pEuXq0T2k7iaM5qP0mDCf+SZvp5nrCRN7t4T9NqRJQ/YTcjduasHTjuFD7pyOBvCunV1iQmtMTmPPyfRVFKofvpf+mDAPXlb3SrjncZjmtysJw8BKc20nIbdcdiKGx16b0NTlcl0PaCC6OGh5spG2P6NdSTjfDYOLue+zwmqX5okrCeNcOrpIyG9cGsL9Kl83CXkuFUvTbX1alc4XpS9cD+Wg/F3CECrTu7OEo/6HZVjSewkFNaKdfXvCMAcoW9PS/HEl4Xoa5ogV9Zv3JuGBjpQJ+C1lZwlLasP/QUIx404mnV4sJlzTs4Tpu9SYyWLBewlKWPLwfF8F3BHyTZPQH5VDel2xZb83oZhYTiCV4k3URUJxiJsPXyJLCd/4EzNNB/xZwNsuTiiVLqY5F24+hv4uIV0aFFe+gz9t0RtSlwn9BrI/4kT46KatUcSNT9uHsFrIuOGU02bS/8uEWdoBu3smFE/W6WYTHFf8wu/mp2k1q1WngHRx9Lr2y6rZ+A3blyGtK9p1+0FfSWh+u+Jn900oqvp90G/DjR90i8muKbHfTrptuOUe1e43hiZeOXRNsQn/naZJSOvheULeH15PaO6bEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPuUXp+dBeOeIGHYAAAAASUVORK5CYII=" 
+ width="117" height="117" border="1">
+</a>
+</div-2>
+<br><br><br>
+<div class="widget-product">
+    <br>
+<a href="">
+    <img src="https://cdn.dsmcdn.com/ty555/product/media/images/20221008/12/189251018/591585096/1/1_org.jpg" width="222" height="330">
+    <br>
+    Geforce Rtx 3060ti 8gb
+    <br><h5>
+        12.599 TL
+    </h5>
+</a>
+</div>
+<div class="widget-product">
+    <br>
+<a href="">
+    <img src="https://cdn.dsmcdn.com/ty1400/product/media/images/prod/QC/20240703/14/69547e6e-9ab7-3fb5-b1db-1daca5970881/1_org_zoom.jpg" width="222" height="330">
+    <br>
+    Amd Ryzen 9 7900 12 Core
+    <br><h5>
+        18.226,21 TL
+    </h5>
+</a>
+</div>
+<div class="widget-product">
+    <br>
+<a href="">
+    <img src="https://cdn.dsmcdn.com/ty1602/product/media/images/prod/PIM/20241115/06/6e6b8371-6811-4011-8176-262c5fa82969/1_org.jpg" width="222" height="330">
+    <br>
+    intel Core I5 11400f 2.60ghz
+    <br><h5>
+        4.635 TL
+    </h5>
+</a>
+</div>
+<div class="widget-product">
+    <br>
+<a href="">
+    <img src="https://cdn.dsmcdn.com/ty1548/prod/QC/20240916/15/54405b32-d0d1-3452-a6ed-7d3e4be4f17c/1_org.jpg" width="222" height="330">
+    <br>
+    Gigabyte B450mk
+    <br><h5>
+        2.029 TL
+    </h5>
+</a>
+</div>
+    <br><br><br>
+    <div class="widget-product">
+        <br>
+    <a href="">
+        <img src="https://cdn.dsmcdn.com/ty990/product/media/images/prod/SPM/PIM/20230828/16/35b2beb0-0f7c-363d-adda-9bc3960ec743/1_org_zoom.jpg" width="222" height="330">
+        <br>
+        ASUS TUF GAMING B650M-E
+        <br><h5>
+            8.469 TL
+        </h5>
+    </a>
+    </div>
+    <div class="widget-product">
+        <br>
+    <a href="">
+        <img src="https://cdn.dsmcdn.com/ty1484/product/media/images/prod/QC/20240816/11/ba2adc18-9f90-3d4f-a6d6-1d48b04218bb/1_org_zoom.jpg" width="222" height="330">
+        <br>
+        msi rtx 4090
+        <br><h5>
+            91.363,70 TL
+        </h5>
+    </a>
+    </div>
+    <div class="widget-product">
+        <br>
+    <a href="">
+        <img src="https://cdn.dsmcdn.com/ty1399/product/media/images/prod/QC/20240703/16/05c12a67-f851-3c2d-b19c-54cf9be6e81d/1_org_zoom.jpg" width="222" height="330">
+        <br>
+        MSI 64gb ram x2
+        <br><h5>
+            2.535 TL
+        </h5>
+    </a>
+    </div>
+    <div class="widget-product">
+        <br>
+    <a href="">
+        <img src="https://cdn.dsmcdn.com/ty1003/product/media/images/prod/SPM/PIM/20230921/23/f9e3c10b-7936-3915-9a1f-6ac5fdb3951d/1_org_zoom.jpg" width="222" height="330">
+        <br>
+        Intel Arc A750 8gb
+        <br><h5>
+            6.799 TL
+        </h5>
+    </a>
+    </div>
+    <br><br><br>
+    <div class="widget-product">
+        <br>
+    <a href="">
+        <img src="https://cdn.dsmcdn.com/ty1554/product/media/images/ty1539/prod/QC/20240913/16/ce7cdc9b-8f51-32fd-a5ed-99e8359e85ba/1_org_zoom.jpg" width="222" height="330">
+        <br>
+        Intel Core I9-12900k 3.20ghz
+        <br><h5>
+            13.469,99 TL
+        </h5>
+    </a>
+    </div>
+    <div class="widget-product">
+        <br>
+    <a href="">
+        <img src="https://cdn.dsmcdn.com/ty1595/prod/QC/20241031/04/607e1798-c193-330e-9448-ff4a715e24d3/1_org_zoom.jpg" width="222" height="330">
+        <br>
+        asus wirless mouse
+        <br><h5>
+            3.099 TL
+        </h5>
+    </a>
+    </div>
+    <div class="widget-product">
+        <br>
+    <a href="">
+        <img src="https://cdn.dsmcdn.com/ty21/product/media/images/20201110/13/24767843/103790905/1/1_org_zoom.jpg" width="222" height="330">
+        <br>
+        Rx580 Amd Gddr5 256bit
+        <br><h5>
+            3.579,99 TL
+        </h5>
+    </a>
+    </div>
+    <div class="widget-product">
+        <br>
+    <a href="">
+        <img src="https://cdn.dsmcdn.com/ty950/product/media/images/20230609/18/384154742/966724444/1/1_org_zoom.jpg" width="222" height="330">
+        <br>
+        ASUS Arc-650 650w 80 Plus Bronze
+        <br><h5>
+            2.029 TL
+        </h5>
+    </a>
+    </div>
+    <br><br><br>
+    <div class="widget-product">
+        <br>
+    <a href="">
+        <img src="https://cdn.dsmcdn.com/ty1490/product/media/images/prod/QC/20240730/18/80541442-1431-35ce-9059-716e6e5f525b/1_org_zoom.jpg" width="222" height="330">
+        <br>
+        MSI X670e Gamıng 
+        <br><h5>
+            10.394,40 TL
+        </h5>
+    </a>
+    </div>
+    <div class="widget-product">
+        <br>
+    <a href="">
+        <img src="https://cdn.dsmcdn.com/ty459/product/media/images/20220625/22/130104423/506713800/4/4_org_zoom.jpg" width="222" height="330">
+        <br>
+        MSI gaming kybourd
+        <br><h5>
+            10M TL ONLY
+        </h5>
+    </a>
+    </div>
+    <div class="widget-product">
+        <br>
+    <a href="">
+        <img src="https://cdn.dsmcdn.com/ty1570/prod/QC/20240926/10/b29911f8-ae50-367b-b746-7f57fb27e458/1_org_zoom.jpg" width="222" height="330">
+        <br>
+        asus 32gb ram 16x2
+        <br><h5>
+            3.535 TL
+        </h5>
+    </a>
+    </div>
+    <div class="widget-product">
+        <br>
+    <a href="">
+        <img src="https://cdn.dsmcdn.com/ty1490/product/media/images/prod/QC/20240730/13/41697616-9461-3f8a-a25c-080b8df446f8/1_org_zoom.jpg" width="222" height="330">
+        <br>
+        MSI gaming mouse
+        <br><h5>
+            2.299 TL
+        </h5>
+    </a>
+    </div>
+    <br><br><br>
+    <footer>
+        support
+        <br><br>
+<img src="https://cdn.dsmcdn.com/web/production/footer-troy.png" width="56">
+<img src="https://cdn.dsmcdn.com/web/production/footer-mastercard.png" width="56">
+<img src="https://cdn.dsmcdn.com/web/production/footer-visa.png" width="56">
+<img src="https://cdn.dsmcdn.com/web/production/footer-american-express.png" width="56">
+<br><br>
+account
+<br>
+<a href="https://www.instagram.com/dlz1nm?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+<img src="https://cdn.dsmcdn.com/web/production/footer-instagram.png" width="56">
+</a>
+    </footer>
+</center>
+</body>
+</html>
